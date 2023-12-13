@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF750D65-CD30-4AE2-A2E1-857F4470C9DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyThuVien_v2._0</RootNamespace>
+    <AssemblyName>QuanLyThuVien_v2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bookItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookItem.Designer.cs">
+      <DependentUpon>bookItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataProvider.cs" />
+    <Compile Include="F_AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_AddBook.Designer.cs">
+      <DependentUpon>F_AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_AddBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_AddBorrower.Designer.cs">
+      <DependentUpon>F_AddBorrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_bookFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_bookFilter.Designer.cs">
+      <DependentUpon>F_bookFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_BookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_BookInfo.Designer.cs">
+      <DependentUpon>F_BookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Borrower.Designer.cs">
+      <DependentUpon>F_Borrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_BorrowerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_BorrowerInfo.Designer.cs">
+      <DependentUpon>F_BorrowerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_filterBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_filterBorrower.Designer.cs">
+      <DependentUpon>F_filterBorrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_main.Designer.cs">
+      <DependentUpon>F_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Book.Designer.cs">
+      <DependentUpon>F_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="bookItem.resx">
+      <DependentUpon>bookItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_AddBook.resx">
+      <DependentUpon>F_AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_AddBorrower.resx">
+      <DependentUpon>F_AddBorrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_bookFilter.resx">
+      <DependentUpon>F_bookFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Book.resx">
+      <DependentUpon>F_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BookInfo.resx">
+      <DependentUpon>F_BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Borrower.resx">
+      <DependentUpon>F_Borrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BorrowerInfo.resx">
+      <DependentUpon>F_BorrowerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_filterBorrower.resx">
+      <DependentUpon>F_filterBorrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_main.resx">
+      <DependentUpon>F_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\sach.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
