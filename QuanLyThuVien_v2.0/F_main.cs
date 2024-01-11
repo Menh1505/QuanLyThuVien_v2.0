@@ -87,5 +87,26 @@ namespace QuanLyThuVien_v2._0
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+            txtb_Intro.Text = @"- Kính gửi thầy Nguyễn Văn Huy
+
+- Phần báo cáo bài tập lớn cuối môn Kỹ Thuật Lập Trình 
+
+- Nhóm: BT77
+
+- Thành viên: Đinh Thiên Mệnh, 
+                Nguyễn Quốc Hùng,
+                Đỗ Vĩnh Phú 
+- Lớp: CN23CLC 
+
+- Nội dung: Viết phần mềm quản lý thư viện";
+        }
+
+        private void txtb_Intro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

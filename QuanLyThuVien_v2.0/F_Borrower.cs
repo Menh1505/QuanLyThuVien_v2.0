@@ -130,15 +130,16 @@ namespace QuanLyThuVien_v2._0
                 foreach (DataGridViewRow dgvRow in dgv_borrower.Rows)
                 {
                     DateTime dt = DateTime.Parse(dgvRow.Cells[5].Value.ToString());
-                    if (DateTime.Compare(dt, DateTime.Now) < 0)
+                    if (DateTime.Compare(dt, DateTime.Now) > 0)
                     {
-                        dgv_borrower.Rows[dgvRow.Index].Selected = true;
+                        //dgv_borrower.Rows[dgvRow.Index].Selected = true;
+                        dgv_borrower.Rows.RemoveAt(dgvRow.Index);
                     }
                 }
-                foreach (DataGridViewRow item in this.dgv_borrower.SelectedRows)
-                {
-                    dgv_borrower.Rows.RemoveAt(item.Index);
-                }
+                //foreach (DataGridViewRow item in this.dgv_borrower.SelectedRows)
+                //{
+                //    dgv_borrower.Rows.RemoveAt(item.Index);
+                //}
             }
             else
             {

@@ -37,8 +37,10 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.txtb_Intro = new System.Windows.Forms.TextBox();
             this.panelDisplay.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDisplay
@@ -159,11 +161,24 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.txtb_Intro);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(0, 76);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1326, 677);
             this.panelDesktop.TabIndex = 1;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // txtb_Intro
+            // 
+            this.txtb_Intro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtb_Intro.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_Intro.Location = new System.Drawing.Point(0, 0);
+            this.txtb_Intro.Multiline = true;
+            this.txtb_Intro.Name = "txtb_Intro";
+            this.txtb_Intro.Size = new System.Drawing.Size(1326, 677);
+            this.txtb_Intro.TabIndex = 0;
+            this.txtb_Intro.TextChanged += new System.EventHandler(this.txtb_Intro_TextChanged);
             // 
             // F_main
             // 
@@ -179,6 +194,8 @@
             this.panelDisplay.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -194,6 +211,7 @@
         private System.Windows.Forms.Button btn_Minimize;
         private System.Windows.Forms.Button btn_Maximize;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.TextBox txtb_Intro;
     }
 }
 

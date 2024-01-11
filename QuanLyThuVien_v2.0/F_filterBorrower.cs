@@ -17,6 +17,11 @@ namespace QuanLyThuVien_v2._0
             InitializeComponent();
         }
 
+        public F_filterBorrower(F_Borrower start, F_Borrower end)
+        {
+            InitializeComponent();
+        }
+
         private void checkBox_outDate_CheckedChanged(object sender, EventArgs e)
         {
             if(checkBox_outDate.Checked == true)
